@@ -175,10 +175,16 @@ margin-right: 0;
     align-items: center;
 }
 .mail-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--primary-text-color);
     /* text-decoration: none; */
 }
 .tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     color: var(--primary-text-color);
     /* text-decoration: none; */
 }
@@ -257,9 +263,10 @@ margin-right: 0;
 .list-adv .item:last-child {
     margin-right: 0;
 }
-.list-adv .icon {
-    display: block;
-    margin: 25px 100px;
+.list-adv .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .list-adv .thumb {
     width: 270px;
@@ -424,7 +431,7 @@ margin-right: 0;
 .client .list-client:first-child {
     margin-left: 0px;
 }
-.list-client .button {
+.list-client .company {
     display: inline-block;
     border: 1px solid var(--icon-primary-fill);
     border-radius: 4px;
@@ -433,23 +440,28 @@ margin-right: 0;
     height: 92px;
     cursor: pointer;
 }
+.list-client .company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.list-client .button:hover,
-.list-client .button:focus { 
+.list-client .company:hover,
+.list-client .company:focus { 
     border: 1px solid var(--accent-color);
 }
 /* .list-client .button:hover {
     fill: var(--accent-color);
 } */
 
-.list-client .button-icon {
-    padding: 0;
-    margin: 0;
+.list-client .icon {
+    /* padding: 0;
+    margin: 0; */
     fill: var(--icon-primary-fill);
 }
 
-.list-client .button:hover .button-icon,
-.list-client .button:focus .button-icon {   
+.list-client .company:hover .icon,
+.list-client .company:focus .icon {   
     fill: var(--accent-color);
 }
     /* footer */
